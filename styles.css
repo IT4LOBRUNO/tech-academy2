@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.login {
+    background-color: #fff;
+    color: #333;
+}
+
+.register {
+    background-color: #333;
+    color: #fff;
+}
+
+.course {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f0f0f0;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.estudante {
+    max-width: 500px;
+    text-align: right;
+}
+
+.estudante img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.courses-btn,
+.testimonials-btn {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.courses-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.testimonials-btn {
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #333;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f8f8f8;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.contact-info,
+.office-hours {
+    width: 45%;
+}
+
+.office-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .auth-buttons {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .auth-buttons button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .course {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .estudante {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses-btn,
+    .testimonials-btn {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-info,
+    .office-hours {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .office-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
